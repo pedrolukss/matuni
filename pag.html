@@ -7,15 +7,22 @@
     <script src="https://kit.fontawesome.com/6d7a90e0fa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header> <div class="navbar">
-    <div class="logo"><a href="#">MatUni</a></div>
-    <ul class="links">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#home">2</a></li>
-        <li><a href="#home">3</a></li>
-        <li><a href="#home">4</a></li>
-    </ul>
-</div></div></header>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<button onclick="openNav()"><i class="fa-sharp fa-solid fa-wave-square"></i></button>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+    ...
+</div>
+<div class="logotipo"><a href="#">MatUni</a> </div>
 <div class="search-bar">
     <div class="row">
         <input type="text" id="input-box" placeholder="Pesquise seu livro" autocomplete="off"></input>
