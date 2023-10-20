@@ -11,7 +11,7 @@
 body{height: 100vh;
 background-color: lightgray;
 background-repeat: no-repeat;
-background-image: url("bitmap22s.webp");
+background-image: url("wdss.webp");
 background-size: 100% 100%;
 background-attachment: fixed;
 background-position: center;}
@@ -59,12 +59,20 @@ cursor: pointer;}
 }
 .logotipo a{
     position: absolute;
-    top: 27%;
-    width: 100%;
-    text-align:center;
-    color: white;
+    top: 20%;
+    left: 37%;
+    width: 0%;
+    color: #de8a16ff;
     font-size: 100px;
-    font-family: "Lucida Console", monospace;
+    font-family: "Consolas", monospace;
+    overflow: hidden;
+    animation: typing 1.5s steps(20, end) forwards,blink-caret .5s step-end infinite;
+    border-right: .20em solid #69410A;
+    text-decoration: none;
+
+}
+.logotipo a:hover{
+    color:#69410A;
 
 }
 button .fa-wave-square{
@@ -73,7 +81,7 @@ button .fa-wave-square{
     cursor: pointer;
 }
 button .fa-wave-square:hover{
-    color: coral;
+    color: #69410A;
 }
 
 .sidenav {
@@ -83,7 +91,8 @@ button .fa-wave-square:hover{
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black*/
+    background-image: url("bzsd.webp");
+    background-color: transparent;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -94,14 +103,15 @@ button .fa-wave-square:hover{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    font-family: 'Consolas',monospace;
+    color: #16DEA9;
     display: block;
     transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #ffff;
 }
 
 /* Position and style the close button (top right corner) */
@@ -117,10 +127,23 @@ button .fa-wave-square:hover{
 #main {
     transition: margin-left .5s;
     padding: 20px;
+    mask-image: linear-gradient(white,transparent);
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 30%
+    }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #69410A; }
 }
