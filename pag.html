@@ -7,15 +7,21 @@
     <script src="https://kit.fontawesome.com/6d7a90e0fa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header> <div class="navbar">
-    <div class="logo"><a href="#">MatUni</a></div>
-    <ul class="links">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#home">2</a></li>
-        <li><a href="#home">3</a></li>
-        <li><a href="#home">4</a></li>
-    </ul>
-</div></div></header>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>
+
+<button onclick="openNav()"><i class="fa-sharp fa-solid fa-wave-square"></i></button>
+
+
+<div id="main">
+    ...
+</div>
+<h1><div class="logotipo"><a href="#">MatUni</a> </div></h1>
 <div class="search-bar">
     <div class="row">
         <input type="text" id="input-box" placeholder="Pesquise seu livro" autocomplete="off"></input>
